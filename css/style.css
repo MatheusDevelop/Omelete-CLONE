@@ -1,0 +1,148 @@
+:root{
+    --fundo:#e7f1fa;
+    --texto:#373737;
+    --light:#e4edf5e3;
+    --shadow:#c7d2dba9;
+    --omelete:#ffc20e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:var(--fundo);
+    color:var(--texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    color:var(--texto);
+    text-decoration: none;
+    font-size: 1.4em;
+}
+.banner img{
+    height:300px;
+}
+img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+.btn{
+    padding: .5em .7em;
+}
+.circle{
+    border-radius: 50%;
+    border:1px solid var(--light)
+}
+.rounded{
+    border-radius: .7em;
+    border:1px solid var(--light)
+}
+.shadow{
+
+    box-shadow: 3px 3px 10px var(--shadow) , -3px -3px 10px var(--light);
+
+
+}
+.inner,.shadow:hover ,.shadow:active{
+    
+    box-shadow:inset 3px 3px 10px var(--light) , inset -3px -3px 10px var(--shadow);
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+}
+header img{
+    width: 120px;
+    filter:drop-shadow(1px 1px 2px rgba(255,195,14,.5));
+}
+#menu{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 2em 3em;
+    background-color: var(--fundo);
+    display: none;
+    border:1px solid var(--light)
+
+}
+#menu li , #menu a {
+    padding: 10px 10em 10px 0;
+    list-style: none;
+}
+main section{
+    max-width: 80%;
+    margin:0 auto;
+}
+h2{
+    width: 80%;
+    margin: 1em auto;
+}
+.card{
+    margin: 2em 0;
+    border:1px solid var(--light)
+
+}
+.card img{
+    margin-top: 8px;
+    box-shadow: 6px 6px 10px var(--shadiw);
+}
+.banner{
+    width:80%;
+    
+    margin:50px auto;
+}
+footer{
+    padding: 2em 0;
+}
+footer ul{
+    list-style-type: none;
+    font-size: .7em;
+    padding:2em;
+}
+footer h4{
+    text-align: left;
+}
+.links{
+    padding: 2em 0;
+}
+.sociais{
+    display: flex;
+    justify-content: space-around;
+}
+.sociais a {
+    color:var(--omelete);
+    text-shadow: 1px 1px 2px var(--omelete);
+}
+@media (min-width:426px){
+
+    .card{
+        display: flex;
+    }
+    .card img {
+        width: 30%;
+        object-fit: cover;
+    }
+    .card div{
+        padding: 2em;
+    }
+
+}
+@media (min-width:801px){
+
+}
+@media (min-width:1201px){
+
+}
